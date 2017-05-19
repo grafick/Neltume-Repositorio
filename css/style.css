@@ -1,0 +1,32 @@
+/* CUSTOM */
+* {
+  font-family: 'Roboto', sans-serif;
+}
+.navbar-toggler{
+  border: 1px solid #ddd;
+}
+.navbar-toggler-icon{
+  color: #333
+}
+
+#main{
+  margin:80px 0 0 0;
+}
+
+.box{
+  padding: 10px;
+  box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+.side .box:first-child{
+  margin-bottom:20px;
+}
+
+
+
+
+
+
+/* GRAFICOS */
+.highcharts-credits{
+  display:none;
+}
