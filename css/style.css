@@ -8,11 +8,9 @@
 .navbar-toggler-icon{
   color: #333
 }
-
 #main{
   margin:80px 0 0 0;
 }
-
 .box{
   padding: 10px;
   box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
@@ -20,6 +18,18 @@
 .side .box:first-child{
   margin-bottom:20px;
 }
+footer p{
+	font-size: 9px;
+	color: #a4a4a4;
+	text-align: center;
+	margin: 30px auto 10px;
+	width: 80%
+}
+
+
+
+
+
 
 
 
