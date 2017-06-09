@@ -8,6 +8,9 @@
 .navbar-toggler-icon{
   color: #333
 }
+#navbarNav ul.navbar-nav li.nav-item.active a.nav-link{
+  color:#2363b2 !important;
+}
 #main{
   margin:20px 0 0 0;
 }
@@ -26,8 +29,40 @@ footer p{
 	width: 80%;
 }
 
+header.contenidos h1{
+  font-size: 28px;
+  font-weight: 400;
+  margin: 20px 0 0;
+  color: #2363b2
+}
+article.contenidos{
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
 
-
+article.terminos h3{
+  font-size: 20px;
+  color: #2363b2;
+  margin: 0 0 30px
+}
+article.terminos ul{
+  margin: 0;
+  padding: 0;
+}
+article.terminos ul li{
+  list-style: none;
+  margin: 0 0 10px;
+  padding: 0;
+}
+article.terminos ul li strong{
+  color: #2363b2
+}
+article.terminos ul li p{
+  display: inline;
+  margin: 0 5px 0 0;
+  padding: 0;
+  font-size: 13px;
+}
 
 
 
@@ -37,3 +72,105 @@ footer p{
 .highcharts-credits{
   display:none;
 }
+
+
+/* TABLAS */
+	table {
+		width: 100%;
+		border-collapse: collapse;
+	}
+	/* Zebra striping */
+	tr:nth-of-type(odd) {
+		background: #eee;
+	}
+	th {
+		background: #4995f5;
+		color: #fff;
+		font-weight: normal;
+    font-size: 14px
+	}
+	td, th {
+		padding: 6px;
+		border: 1px solid #fff;
+		text-align: left;
+	}
+  td span{
+    font-size:12px;
+    padding: 1px 5px 2px;
+    background: #2363b2;
+    color: #fff;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+  }
+
+
+
+  /*
+  	Max width before this PARTICULAR table gets nasty
+  	This query will take effect for any screen smaller than 760px
+  	and also iPads specifically.
+  	*/
+  	@media
+  	only screen and (max-width: 760px),
+  	(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+  		/* Force table to not be like tables anymore */
+  		table, thead, tbody, th, td, tr {
+  			display: block;
+  		}
+
+  		/* Hide table headers (but not display: none;, for accessibility) */
+  		thead tr {
+  			position: absolute;
+  			top: -9999px;
+  			left: -9999px;
+  		}
+
+  		tr { border: 1px solid #ccc; }
+
+  		td {
+  			/* Behave  like a "row" */
+  			border: none;
+  			border-bottom: 1px solid #eee;
+  			position: relative;
+  			padding-left: 50%;
+  		}
+
+  		td:before {
+  			/* Now like a table header */
+  			position: absolute;
+  			/* Top/left values mimic padding */
+  			top: 6px;
+  			left: 6px;
+  			width: 45%;
+  			padding-right: 10px;
+  			white-space: nowrap;
+  		}
+
+  		/*
+  		Label the data
+  		*/
+  		td:nth-of-type(1):before { content: "Prioridad"; }
+  		td:nth-of-type(2):before { content: "Alerta"; }
+  		td:nth-of-type(3):before { content: "Estado"; }
+  		td:nth-of-type(4):before { content: "Zonas"; }
+  		td:nth-of-type(5):before { content: "Encargado"; }
+  	}
+
+  	/* Smartphones (portrait and landscape) ----------- */
+  	@media only screen
+  	and (min-device-width : 320px)
+  	and (max-device-width : 480px) {
+  		body {
+  			padding: 0;
+  			margin: 0;
+  			width: 320px; }
+  		}
+
+  	/* iPads (portrait and landscape) ----------- */
+  	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  		body {
+  			width: 495px;
+  		}
+  	}

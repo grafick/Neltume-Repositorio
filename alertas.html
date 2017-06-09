@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Alertas / Neltume Monitor</title>
+	<link rel="icon" href="favicon.ico">
+	<link rel="icon" href="favicon.ico" type="image/x-icon" />
+	<!-- META -->
+	<meta charset="utf-8">
+	<meta name="description" content="Neltume Monitor, Monitoreo de Plagas">
+	<meta name="author" content="Cigoto">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+	<!-- JS -->
+	<script src="https://code.highcharts.com/highcharts.js"></script>
+	<script src="https://code.highcharts.com/modules/exporting.js"></script>
+</head>
+
+<body>
+	<!-- NAV -->
+	<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<a class="navbar-brand" href="#">
+			<img src="images/Neltume.png" width="120" height="25" alt="Neltume">
+		</a>
+
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" href="index.html">Monitoreo <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Mapa</a>
+				</li>
+				<li class="nav-item active">
+					<a class="nav-link" href="alertas.html">Alertas</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+
+
+
+	<header class="contenidos container">
+		<h1>Alertas</h1>
+	</header>
+
+	<article class="contenidos container">
+		<table>
+			<thead>
+				<tr>
+					<th>Prioridad</th>
+					<th>Alerta</th>
+					<th>Estado</th>
+					<th>Zonas</th>
+					<th>Encargado</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<td>1</td>
+					<td>Hemos detectado la aparición de X ejemplares de Y</td>
+					<td><span>Sin Revisar</span></td>
+					<td>Z</td>
+					<td>Y</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>Monitoreo Diario: Se registró la presencia de X ejemplares de Y en las zonas x, y, z</td>
+					<td><span>Tomé Conocimiento</span></td>
+					<td>B</td>
+					<td>P.J.</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>Estado Nodos: El nodo A, pertenenciente a la zona z está inactivo</td>
+					<td><span>En Proceso</span></td>
+					<td>C</td>
+					<td>C.S.</td>
+				</tr>
+			</tbody>
+		</table>
+	</article>
+
+
+
+	<article class="contenidos terminos container">
+		<h3>Términos</h3>
+		<ul>
+			<li>
+				<p><strong>Prioridad:</strong></p>
+				<p>Distintas prioridades de aviso definen: i. Canal, ii. Exigencia.</p>
+				<p>Puede tomar los valores 1, 2 y 3 de mayor a menor prioridad.</p>
+				<p>La definición de Prioridad la hace Neltume.</p>
+			</li>
+			<li>
+				<p><strong>Alerta:</strong></p>
+				<p>Alertas en eventos gatillados según reglas.</p>
+				<p>Alerta incluye cantidad y ejemplar monitoreado.</p>
+				<p>Cantidad se obtiene de procesamiento de imagenes y ejemplar según prospección visual en plataforma.</p>
+				<p>Cantidad debe incluir link a Datos con filtro según origen, para acceder a las fotos que respaldan el conteo</p>
+			</li>
+			<li>
+				<p><strong>Estado:</strong></p>
+				<p>Estado debe ser modificado por Encargado.</p>
+				<p>Neltume hace seguimiento de los estados y notifica según prioridad.</p>
+			</li>
+			<li>
+				<p><strong>Zonas:</strong></p>
+				<p>Agrupaciones de nodos que agrupan datos para generar alertas.</p>
+				<p>Alertas se generan por zonas, no por nodos.</p>
+				<p>Zona debe incluir link a datos según filtro de origen.</p>
+			</li>
+			<li>
+				<p><strong>Encargado:</strong></p>
+				<p>Persona encargada de cambiar hitos.</p>
+				<p>Puede ser sólo 1 por cliente o se pueden dividir por zonas.</p>
+			</li>
+		</ul>
+	</article>
+
+
+  <footer>
+      <p>Tecnologías Neltume SPA - Derechos Reservados</p>
+  </footer>
+
+
+
+  <!-- GRAFICOS JS-->
+  <script src="js/graficos_home.js"></script>
+	<!-- JS -->
+	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
