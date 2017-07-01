@@ -73,8 +73,8 @@
 
 
 	<!-- JS -->
-	<script src="js/bootstrap.min.js"></script>
 	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 	<!-- JS MAPS -->
 	<script src="https://maps.google.com/maps/api/js?sensor=false&libraries=geometry&v=3.22&key=AIzaSyBL4UP6bENvJmw-WSA0LgMdEOcpUjZb1kk"></script>
 	<script src="js/mapa/maplace.min.js"></script>
@@ -84,11 +84,9 @@
 	new Maplace({
     locations: Neltume_Cliente_1,
     map_div: '#Mapa_Neltume',
-		controls_type: 'list',
+		// controls_type: 'list',
     controls_title: 'Sensores Disponibles:',
-
 		MapTypeId: google.maps.MapTypeId.ROADMAP,
-
 		// map_options: 'mapTypeId:google.maps.MapTypeId.SATELLITE',
 	}).Load();
 	</script>
