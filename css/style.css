@@ -110,23 +110,23 @@ article.terminos ul li p{
 
 
 /* MAPAS */
-#gmap-dropdown {
+#Mapa_Neltume {
     height: 400px;
     width: 100%;
     padding: 3px;
     border: 5px solid #ddd;
     font-size: 90%;
 }
-#gmap-dropdown .wrap_controls select{
+#Mapa_Neltume .wrap_controls select{
 	width: 140px;
 	height: 25px;
 	border: 1px solid #e1e1e1;
 }
-#gmap-dropdown .wrap_controls select:focus{
+#Mapa_Neltume .wrap_controls select:focus{
 	outline-style:none;
 	border: 1px solid #e1e1e1;
 }
-#gmap-dropdown h3 {
+#Mapa_Neltume h3 {
 	font-size: 20px;
 	font-weight: bold;
 	color:#2363b2;
@@ -135,11 +135,16 @@ article.terminos ul li p{
 	border-bottom: 1px solid #ccc;
 	background-color:#fff !important;
 }
-#gmap-dropdown p {
+#Mapa_Neltume p {
     font-size: 14px;
     margin:0;
     padding:0
 }
+#Mapa_Neltume a{
+    font-size: 13px;
+}
+/*.gm-style-mtc {display: none;}*/
+.gm-svpc {display: none;}
 
 
 /* GRAFICOS */
