@@ -11,6 +11,16 @@
 #navbarNav ul.navbar-nav li.nav-item.active a.nav-link{
   color:#2363b2 !important;
 }
+#navbarNav svg{
+  height: 15px;
+  margin: 0 0 -2px;
+}
+#navbarNav a svg .monitoreo_ico, #navbarNav a svg .mapas_ico, #navbarNav a svg .alertas_ico{
+  fill:#b1b1b1;
+}
+#navbarNav .active a svg .monitoreo_ico, #navbarNav .active a svg .mapas_ico, #navbarNav .active a svg .alertas_ico{
+  fill:#2363b2;
+}
 
 
 /*BOTONES*/
@@ -99,7 +109,37 @@ article.terminos ul li p{
 }
 
 
-
+/* MAPAS */
+#gmap-dropdown {
+    height: 400px;
+    width: 100%;
+    padding: 3px;
+    border: 5px solid #ddd;
+    font-size: 90%;
+}
+#gmap-dropdown .wrap_controls select{
+	width: 140px;
+	height: 25px;
+	border: 1px solid #e1e1e1;
+}
+#gmap-dropdown .wrap_controls select:focus{
+	outline-style:none;
+	border: 1px solid #e1e1e1;
+}
+#gmap-dropdown h3 {
+	font-size: 20px;
+	font-weight: bold;
+	color:#2363b2;
+	margin-bottom:5px;
+  padding-bottom:5px;
+	border-bottom: 1px solid #ccc;
+	background-color:#fff !important;
+}
+#gmap-dropdown p {
+    font-size: 14px;
+    margin:0;
+    padding:0
+}
 
 
 /* GRAFICOS */
