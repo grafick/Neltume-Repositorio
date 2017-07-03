@@ -11,9 +11,10 @@
 	<meta name="author" content="Cigoto">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<!-- CSS -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="css/modaal.css">
 </head>
 
 <body>
@@ -40,7 +41,7 @@
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38.23 50.97"><defs><style>.mapas_ico{}</style></defs>
 							<title>mapas</title>
 							<g id="mapa_1" data-name="mapa_1"><g id="mapa_2" data-name="mapa_2"><path class="mapas_ico" d="M19.11,51a1.56,1.56,0,0,1-1.29-.67L5.34,32.72l-.57-.8a27.45,27.45,0,0,1-3.26-5.37A18.79,18.79,0,0,1,.38,22.91,19.47,19.47,0,0,1,0,19.12,19.1,19.1,0,0,1,26.42,1.46,19.27,19.27,0,0,1,32.63,5.6a19.06,19.06,0,0,1,5.6,13.52,19.14,19.14,0,0,1-1.51,7.44,27.38,27.38,0,0,1-3.26,5.37l-.57.8L20.41,50.3a1.56,1.56,0,0,1-1.29.67Zm0-43A11.15,11.15,0,1,0,30.26,19.12,11.15,11.15,0,0,0,19.11,8Z"/></g></g></svg>
-						Mapa</a>
+						Mapas</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="alertas.html">
@@ -63,7 +64,27 @@
 
 	<article class="contenidos container">
 		<div id="Mapa_Neltume"></div>
+
+
+
+
+		<a href="#ContenidoModal" class="btn verDetalles">Ejemplo Modal Sensor</a>
+		<!-- <a href="http://humaan.com" class="btn modaal-iframe">Show Modaal</a>-->
+
+		<div id="ContenidoModal" class="hidden">
+			<img src="#" alt="Última imagen capturada">
+			<h2>Ejemplo Sensor</h2>
+			<ul>
+				<li>Temperatura</li>
+				<li>Humedad</li>
+				<li>Conteo (u Input),</li>
+				<li>comentarios (opcional),</li>
+			</ul>
+			<a href="#" class="btn btn-primary">OK</a>
+			<a href="#" class="btn btn-secondary">Solicitar Revisión</a>
+		</div>
 	</article>
+
 
   <footer>
       <p>Tecnologías Neltume SPA - Derechos Reservados</p>
@@ -75,10 +96,12 @@
 	<!-- JS -->
 	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/modaal.js"></script>
 	<!-- JS MAPS -->
 	<script src="https://maps.google.com/maps/api/js?sensor=false&libraries=geometry&v=3.22&key=AIzaSyBL4UP6bENvJmw-WSA0LgMdEOcpUjZb1kk"></script>
 	<script src="js/mapa/maplace.min.js"></script>
 	<script src="js/mapa/points.js"></script>
+
 
 	<script type="text/javascript">
 	new Maplace({
@@ -89,6 +112,21 @@
 		MapTypeId: google.maps.MapTypeId.ROADMAP,
 		// map_options: 'mapTypeId:google.maps.MapTypeId.SATELLITE',
 	}).Load();
+	</script>
+
+	<script type="text/javascript">
+		$('.verDetalles').modaal({
+			fullscreen: true
+		});
+
+		// iFrame Modal
+		$('.modaal-iframe').modaal({
+			type: 'iframe',
+			width: 1000,
+			height: 800,
+			fullscreen: true,
+			accessible_title: 'iFrame modal title',
+		});
 	</script>
 
 </body>
