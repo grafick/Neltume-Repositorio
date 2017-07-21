@@ -20,7 +20,7 @@ var Neltume_Cliente_1 = [
         icon: 'images/mapas.png',
         html: [
             '<h3>11A2</h3>',
-            '<p><b>Zona A Nodo 2</b><br>Última actualización: 01 Julio 2017 22:30 hrs.</p><br><a href="#" class="btn btn-primary">Ver detalle</a>'
+            '<p><b>Zona A Nodo 2</b><br>Última actualización: 01 Julio 2017 22:30 hrs.</p><br><a href="javascript:window.parent.location.href=\'mapas.html#ContenidoModal\'" class="btn btn-primary">Ver detalle</a>'
         ].join(''),
         animation: google.maps.Animation.DROP,
         // mapTypeId: google.maps.MapTypeId.SATELLITE
@@ -33,7 +33,7 @@ var Neltume_Cliente_1 = [
         icon: 'images/mapas.png',
         html: [
             '<h3>11A3</h3>',
-            '<p><b>Zona A Nodo 3</b><br>Última actualización: 01 Julio 2017 22:30 hrs.</p><br><a href="#" class="btn btn-primary">Ver detalle</a>'
+            '<p><b>Zona A Nodo 3</b><br>Última actualización: 01 Julio 2017 22:30 hrs.</p><br><a href="javascript:window.top.location.href=\'mapas.html#ContenidoModal\'" class="btn btn-primary">Ver detalle</a>'
         ].join(''),
         animation: google.maps.Animation.DROP,
         // mapTypeId: google.maps.MapTypeId.SATELLITE

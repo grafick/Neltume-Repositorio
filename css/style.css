@@ -144,7 +144,7 @@ article.terminos ul li p{
     font-size: 13px;
 }
 /*.gm-style-mtc {display: none;}*/
-.gm-svpc {display: none;}
+.gm-svpc, .gm-style-cc /* .gmnoprin */ {display: none;}
 
 
 
