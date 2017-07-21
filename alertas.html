@@ -66,32 +66,59 @@
 				<tr>
 					<th>Prioridad</th>
 					<th>Alerta</th>
-					<th>Estado</th>
 					<th>Zonas</th>
 					<th>Encargado</th>
+					<th>Estado</th>
 				</tr>
 				</thead>
 				<tbody>
 				<tr>
 					<td>1</td>
 					<td>Hemos detectado la aparición de X ejemplares de Y</td>
-					<td><span>Sin Revisar</span></td>
 					<td>Z</td>
 					<td>Y</td>
+					<td>
+						<form class="form-inline">
+						  <select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="inlineFormCustomSelect">
+						    <option selected>Tomé Conocimiento</option>
+								<option>Sin Revisar</option>
+								<option>En Proceso</option>
+						  </select>
+						  <button type="submit" class="btn btn-primary">Confirmar</button>
+						</form>
+					</td>
 				</tr>
 				<tr>
 					<td>2</td>
 					<td>Monitoreo Diario: Se registró la presencia de X ejemplares de Y en las zonas x, y, z</td>
-					<td><span>Tomé Conocimiento</span></td>
 					<td>B</td>
 					<td>P.J.</td>
+					<td>
+						<form class="form-inline">
+						  <select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="inlineFormCustomSelect">
+						    <option selected>Sin Revisar</option>
+								<option>En Proceso</option>
+								<option>Tomé Conocimiento</option>
+						  </select>
+						  <button type="submit" class="btn btn-primary">Confirmar</button>
+						</form>
+					</td>
 				</tr>
 				<tr>
 					<td>3</td>
 					<td>Estado Nodos: El nodo A, pertenenciente a la zona z está inactivo</td>
-					<td><span>En Proceso</span></td>
 					<td>C</td>
 					<td>C.S.</td>
+					<td>
+						<form class="form-inline">
+						  <select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="inlineFormCustomSelect">
+						    <option selected>En Proceso</option>
+								<option>Sin Revisar</option>
+								<option>Tomé Conocimiento</option>
+						  </select>
+						  <button type="submit" class="btn btn-primary">Confirmar</button>
+						</form>
+					</td>
 				</tr>
 			</tbody>
 		</table>

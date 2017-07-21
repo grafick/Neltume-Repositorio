@@ -260,9 +260,9 @@ header.mapa .dropdown .btn{
   		*/
   		td:nth-of-type(1):before { content: "Prioridad"; }
   		td:nth-of-type(2):before { content: "Alerta"; }
-  		td:nth-of-type(3):before { content: "Estado"; }
+  		td:nth-of-type(3):before { content: "Encargado"; }
   		td:nth-of-type(4):before { content: "Zonas"; }
-  		td:nth-of-type(5):before { content: "Encargado"; }
+  		td:nth-of-type(5):before { content: "Estado"; }
   	}
 
   	/* Smartphones (portrait and landscape) ----------- */
