@@ -110,6 +110,24 @@ article.terminos ul li p{
 
 
 /* MAPAS */
+header.mapa{
+  margin: 20px auto 0;
+}
+header.mapa h1{
+  margin: 0;
+}
+header.mapa .filtrosName{
+  margin: 6px 0 0;
+}
+header.mapa .filtrosName p{
+  font-size: 14px;
+}
+header.mapa .dropdown .btn{
+  font-size: 14px;
+}
+
+
+
 #Mapa_Neltume {
     height: 500px;
     width: 100%;
@@ -263,3 +281,11 @@ article.terminos ul li p{
   			width: 495px;
   		}
   	}
+
+
+
+/* CUSTOM */
+.no-gutters{
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}

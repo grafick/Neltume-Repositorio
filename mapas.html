@@ -58,38 +58,45 @@
 
 
 
-	<header class="contenidos container navbar-nav">
-		<div class="col-sm-3">
-			<h1>Mapas</h1>
-		</div>
-		<div class="col-sm-3">
-			<span>Filtros:</span>
-		</div>
+	<header class="mapa contenidos container">
+		<div class="row">
+			<div class="col-12 col-md-6">
+				<h1>Mapas</h1>
+			</div>
 
-		<div class="col-sm-6 dropdown justify-content-end">
-			<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Clientes</button>
-			<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-				<a class="dropdown-item" href="#">Cliente 1</a>
-				<a class="dropdown-item" href="#">Cliente 2</a>
-				<a class="dropdown-item disabled" href="#">Cliente 3</a>
-				<a class="dropdown-item" href="#">Cliente 4</a>
+
+			<div class="col-12 col-md-6 row">
+				<span class="col-md-3 col-sm-12 filtrosName">
+					<p class="float-md-right">Filtrar:</p> <!-- hidden-sm-down -->
+				</span>
+
+				<div class="dropdown col-4 col-md-3">
+					<button class="btn btn-secondary dropdown-toggle float-md-right col-12 col-md-12 no-gutters" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Clientes</button>
+					<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+						<a class="dropdown-item" href="#">Cliente 1</a>
+						<a class="dropdown-item" href="#">Cliente 2</a>
+						<a class="dropdown-item disabled" href="#">Cliente 3</a>
+						<a class="dropdown-item" href="#">Cliente 4</a>
+					</div>
+				</div>
+				<div class="dropdown col-4 col-md-3">
+					<button class="btn btn-secondary dropdown-toggle float-md-right col-12 col-md-12 no-gutters" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Recinto</button>
+					<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+						<a class="dropdown-item" href="#">Recinto 1</a>
+						<a class="dropdown-item" href="#">Recinto 2</a>
+						<a class="dropdown-item" href="#">Recinto 3</a>
+					</div>
+				</div>
+				<div class="dropdown col-4 col-md-3">
+					<button class="btn btn-secondary dropdown-toggle float-md-right col-12 col-md-12 no-gutters" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Zonas</button>
+					<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+						<a class="dropdown-item" href="#">Nodo 1</a>
+						<a class="dropdown-item" href="#">Nodo 2</a>
+						<a class="dropdown-item" href="#">Nodo 3</a>
+					</div>
+				</div>
 			</div>
-		</div>
-		<div class="col-sm-6 dropdown justify-content-end">
-			<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Recinto</button>
-			<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-				<a class="dropdown-item" href="#">Recinto 1</a>
-				<a class="dropdown-item" href="#">Recinto 2</a>
-				<a class="dropdown-item" href="#">Recinto 3</a>
-			</div>
-		</div>
-		<div class="col-sm-6 dropdown justify-content-end">
-			<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Zonas</button>
-			<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-				<a class="dropdown-item" href="#">Nodo 1</a>
-				<a class="dropdown-item" href="#">Nodo 2</a>
-				<a class="dropdown-item" href="#">Nodo 3</a>
-			</div>
+
 		</div>
 	</header>
 
