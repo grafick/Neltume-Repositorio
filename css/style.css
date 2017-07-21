@@ -181,6 +181,23 @@ header.mapa .dropdown .btn{
 }
 
 
+/* Alertas */
+.alertas td{
+  font-size: 15px;
+}
+.alertas select, .alertas button{
+  font-size: 14px;
+}
+@media only screen and (max-width: 760px){
+  .alertas td{
+    font-size: 13px;
+  }
+  .alertas select, .alertas button{
+    font-size: 13px;
+  }
+}
+
+
 /* TABLAS */
 	table {
 		width: 100%;
