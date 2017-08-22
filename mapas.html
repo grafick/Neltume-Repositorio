@@ -12,7 +12,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<!-- CSS -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
-	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/modaal.css">
 </head>
@@ -105,22 +105,23 @@
 
 
 
+		<a href="sensor/ajax-content.html" class="btn modaal-iframe" id="ejemplo1" class="hidden"></a>
+<!-- ejemplos
+		<a href="#ContenidoModal" class="btn verDetalles" id="ejemplo">Ejemplo Modal Sensor</a>
 
-		<a href="#ContenidoModal" class="btn verDetalles">Ejemplo Modal Sensor</a>
-		<!-- <a href="http://humaan.com" class="btn modaal-iframe">Show Modaal</a>-->
-
-		<div id="ContenidoModal" class="hidden">
-			<img src="images/Neltume.png" alt="Última imagen capturada">
-			<h2>Ejemplo Sensor</h2>
-			<ul>
-				<li>Temperatura</li>
-				<li>Humedad</li>
-				<li>Conteo (u Input),</li>
-				<li>comentarios (opcional),</li>
-			</ul>
-			<a href="#" class="btn btn-primary">OK</a>
-			<a href="#" class="btn btn-secondary">Solicitar Revisión</a>
-		</div>
+				<div id="ContenidoModal" class="hidden">
+					<img src="images/Neltume.png" alt="Última imagen capturada">
+					<h2>Ejemplo Sensor 11A1</h2>
+					<ul>
+						<li>Temperatura:</li>
+						<li>Humedad:</li>
+						<li>Conteo (u Input):</li>
+						<li>comentarios (opcional):</li>
+					</ul>
+					<a href="#" class="btn btn-primary">OK</a>
+					<a href="#" class="btn btn-secondary">Solicitar Revisión</a>
+				</div>
+-->
 	</article>
 
 
@@ -143,15 +144,15 @@
 
 	<script type="text/javascript">
 	new Maplace({
-    locations: Neltume_Cliente_1,
-    map_div: '#Mapa_Neltume',
+		locations: Neltume_Cliente_1,
+		map_div: '#Mapa_Neltume',
 		// controls_type: 'list',
-    controls_title: 'Sensores Disponibles',
+		controls_title: 'Sensores Disponibles',
 		mapTypeControl: true,
-    mapTypeControlOptions: {
-      style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
-      mapTypeIds: ['roadmap', 'terrain']
-    }
+		mapTypeControlOptions: {
+			style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
+			mapTypeIds: ['roadmap', 'terrain']
+		}
 		// map_options: 'mapTypeId:google.maps.MapTypeId.SATELLITE',
 	}).Load();
 	</script>
@@ -169,6 +170,13 @@
 			fullscreen: true,
 			accessible_title: 'iFrame modal title',
 		});
+	</script>
+
+	<script type="text/javascript">
+	function modalMapa()
+	{
+		document.getElementById('ejemplo1').click();
+	}
 	</script>
 
 </body>
