@@ -10,10 +10,23 @@
 }
 #navbarNav ul.navbar-nav li.nav-item.active a.nav-link{
   color:#2363b2 !important;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+#navbarNav ul.navbar-nav li.nav-item a:hover{
+  color:#179ab1;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+#navbarNav ul.navbar-nav li.nav-item.active a.nav-link:hover{
+  color:#179ab1 !important;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
 }
 #navbarNav svg{
   height: 15px;
   margin: 0 0 -2px;
+  color: #179ab1
 }
 #navbarNav a svg .monitoreo_ico, #navbarNav a svg .mapas_ico, #navbarNav a svg .alertas_ico{
   fill:#b1b1b1;
